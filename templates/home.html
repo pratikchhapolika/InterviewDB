@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+          <div class="flexsearch">
+            <div class="flexsearch--wrapper">
+
+              <form class="flexsearch--form" method="POST" action="">{% csrf_token %}
+                <div class="flexsearch--input-wrapper">
+                  <input class="flexsearch--input" type="search" placeholder="Search for Company" name="search">
+                </div>
+              </form>
+                  
+            </div>
+          </div>
+
+          <div id="main">
+            <div class="inner">
+              <section class="tiles">
+
+                <article class="style1">
+                  <span class="image">
+                    <img src="{% static "img/amazon.jpg" %}" alt="Amazon" />
+                  </span>
+                  <a href="company/Amazon">
+                    <h2>Amazon</h2>
+                    <div class="content">
+                    </div>
+                  </a>
+                </article>
+
+                <article class="style2">
+                  <span class="image">
+                    <img src="{% static "img/apple.jpg" %}" alt="Apple" />
+                  </span>
+                  <a href="company/Apple">
+                    <h2>Apple</h2>
+                    <div class="content">
+                    </div>
+                  </a>
+                </article>
+
+                <article class="style3">
+                  <span class="image">
+                    <img src="{% static "img/fb.jpg" %}" alt="Facebook" />
+                  </span>
+                  <a href="company/Facebook">
+                    <h2>Facebook</h2>
+                    <div class="content">
+                    </div>
+                  </a>
+                </article>
+
+                <article class="style4">
+                  <span class="image">
+                    <img src="{% static "img/google.jpg" %}" alt="Google" />
+                  </span>
+                  <a href="company/Google">
+                    <h2>Google</h2>
+                    <div class="content">
+                    </div>
+                  </a>
+                </article>
+
+                <article class="style5">
+                  <span class="image">
+                    <img src="{% static "img/goldman.jpg" %}" alt="Goldman Sachs" />
+                  </span>
+                  <a href="company/Goldman">
+                    <h2>Goldman Sachs</h2>
+                    <div class="content">
+                    </div>
+                  </a>
+                </article>
+
+                <article class="style6">
+                  <span class="image">
+                    <img src="{% static "img/linkedin.jpg" %}" alt="LinkedIn" />
+                  </span>
+                  <a href="company/Linkedin">
+                    <h2>LinkedIn</h2>
+                    <div class="content"></div>
+                  </a>
+                </article>
+
+                <article class="style7">
+                  <span class="image">
+                    <img src="{% static "img/microsoft.jpg" %}" alt="Microsoft" />
+                  </span>
+                  <a href="company/Microsoft">
+                    <h2>Microsoft</h2>
+                    <div class="content"></div>
+                  </a>
+                </article>
+                
+                <article class="style8">
+                  <span class="image">
+                    <img src="{% static "img/quora.jpg" %}" alt="Quora" />
+                  </span>
+                  <a href="company/Quora">
+                    <h2>Quora</h2>
+                    <div class="content"></div>
+                  </a>
+                </article>
+                
+                <article class="style9">
+                  <span class="image">
+                    <img src="{% static "img/uber.jpg" %}" alt="Uber" />
+                  </span>
+                  <a href="company/Uber">
+                    <h2>Uber</h2>
+                    <div class="content">
+                    </div>
+                  </a>
+                </article>
+              
+              </section>
+            </div>
+          </div>
+
+{% endblock %}

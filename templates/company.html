@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+{% block company %}
+
+{% if results %}
+<h5 style="text-align: center;">Total Questions asked in {{ query }}: {{ total_company_questions }}</h3>
+<br />
+{% for i in results %}
+<h3 style="text-align: center;"><a href="questions/{{ i.url }}">{{ i.question_title }}</a></h3>
+<hr />
+{% endfor %}
+{% endif %}
+
+{% endblock %}
